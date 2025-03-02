@@ -8,10 +8,10 @@
 </head>
 <body>
     <form action="/for_loops/index.php" method="post">
-        <!-- <label>
+        <label>
             Number to count to:
 </label>
-    <input name="numToLoop"/> -->
+    <input name="numToLoop"/>
         <label>
             Number to from:
 </label>
@@ -26,15 +26,16 @@
 <?php
 
 $message = "Sta!";
-// $numToLoop = $_POST['numToLoop'];
+$numToLoop = $_POST['numToLoop'];
 $numToLoopBackwards = $_POST['numToLoopBackwards'];
 
-//first is index always start with 0
-// for($i = 1; $i <= $numToLoop; $i++){
-//     echo "$message index is $i <br/>";
-// }
+echo "Number to count to: $numToLoop <br/>";
+echo "Number to count from: $numToLoopBackwards <br/>";
+// first is index always start with 0
+for($i = 1; $i <= $numToLoop; $i++){
+    echo "$message index is $i <br/>";
+}
 
-echo "$numToLoopBackwards";
 
 for($i = $numToLoopBackwards; $i > 0; $i--){
     echo "$i <br/>";
