@@ -22,6 +22,9 @@ $countries = array(
     "China" => "Beijing",
 );
 
+
+
+
 $country = $_POST['country'];
 
 //Besides isset we can also use array_key_exists
